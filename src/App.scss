@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+body {
+  background-color: #7939FF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: #fff;
+}
+.App {
+  padding: 86px 0;
+  .header {
+    position: relative;
+    .hamburger {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      border: none;
+      background: 0;
+      outline: none;
+    }
+    .title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 50px;
+    }
+  }
+  .enter-task {
+    max-width: 488px;
+    width: 100%;
+    margin-top: 66px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    .enter-task__input {
+      width: 100%;
+      padding: 6px 95px 6px 15px;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid rgba(4, 25, 85, 0.5);
+      filter: drop-shadow(10px 10px 20px rgba(4, 25, 85, 0.25));
+      border-radius: 5px;
+    }
+    .enter-task__btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 80px;
+      height: 51px;
+      border: none;
+      background: rgba(4, 25, 85, 0.5);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      transition: .2s;
+      &:hover {
+        background-color: #041955;
+      }
+    }
+  }
+}
+
+
+/* ------ Media Queries ------ */
+
+/*Extra large - not use*/
+
+/* 992-1200px - Large*/
+@media screen and (max-width: 1199.98px) {
+	
+}
+
+/* 768-992px - Medium*/
+@media screen and (max-width: 991.98px) {
+	
+}
+
+/* 576-768px - Small*/
+@media screen and (max-width: 767.98px) {
+	
+}
+
+/* 320-576px - Extra small*/
+@media screen and (max-width: 575.98px) {
+  .App .header .title {
+    font-size: 40px;
+  } 
+
+  .todo-item label {
+    font-size: 20px;
+  }
+}

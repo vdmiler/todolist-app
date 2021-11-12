@@ -1,0 +1,37 @@
+.noitems {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 30px;
+    background-color: #041955;
+    box-shadow: 10px 10px 20px rgba(4, 25, 85, 0.25);
+    border-radius: 5px;
+    p {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/* ------ Media Queries ------ */
+
+/*Extra large - not use*/
+
+/* 992-1200px - Large*/
+@media screen and (max-width: 1199.98px) {
+	
+}
+
+/* 768-992px - Medium*/
+@media screen and (max-width: 991.98px) {
+	
+}
+
+/* 576-768px - Small*/
+@media screen and (max-width: 767.98px) {
+	
+}
+
+/* 320-576px - Extra small*/
+@media screen and (max-width: 575.98px) {
+
+}

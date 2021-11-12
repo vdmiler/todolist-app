@@ -1,0 +1,99 @@
+.todo-item {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 30px;
+    background-color: #041955;
+    box-shadow: 10px 10px 20px rgba(4, 25, 85, 0.25);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        .checkbox {
+            display: none;
+        }
+        .fake {
+            display: inline-block;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            position: relative;
+            margin-right: 30px;
+            flex-shrink: 0;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 10%;
+                left: 30%;
+                background: url(../../img/check.svg);
+                width: 18px;
+                height: 13px;
+                opacity: 0;
+                transition: .2s;
+            }
+        }
+        .checkbox:checked + .fake::before {
+            opacity: 1;
+        }
+        .checkbox:checked + .fake {
+            border-color: #7939ff;
+        }
+        .text {
+            word-break: break-all;
+        }
+        font: {
+            size: 25px;
+        }
+    }
+    .del-btn {
+        border: none;
+        background: 0;
+        outline: none;
+        cursor: pointer;
+        img {
+            transition: .2s;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.todo-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.thr {
+    text-decoration: line-through;
+}
+
+
+/* ------ Media Queries ------ */
+
+/*Extra large - not use*/
+
+/* 992-1200px - Large*/
+@media screen and (max-width: 1199.98px) {
+	
+}
+
+/* 768-992px - Medium*/
+@media screen and (max-width: 991.98px) {
+	
+}
+
+/* 576-768px - Small*/
+@media screen and (max-width: 767.98px) {
+	
+}
+
+/* 320-576px - Extra small*/
+@media screen and (max-width: 575.98px) {
+
+}

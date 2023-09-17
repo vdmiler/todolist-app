@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ToDoItem.scss';

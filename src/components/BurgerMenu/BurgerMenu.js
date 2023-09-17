@@ -10,7 +10,7 @@ const BurgerMenu = props => {
         <div className={props.state ? 'menu active' : 'menu'}>
             <div className="menu__content d-flex justify-content-between">
                 <div className="menu__leftSide">
-                    <a href="https://websters.ru/" className="menu__face">
+                    <a href="https://pugilist.pro/" className="menu__face">
                         <img src={photo} alt="Vadim Miler" className="menu__img"/>
                         <div className="menu__ellipse"></div>
                     </a>
